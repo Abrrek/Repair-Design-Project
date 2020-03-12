@@ -18,5 +18,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		if(e.keyCode === 27) {
 			modal.classList.remove('modal--visible');
 		}
+		// if(e.keyCode === 27) {
+		// 	modal.classList.remove('modal--visible');
+		// }
 	});
 });
