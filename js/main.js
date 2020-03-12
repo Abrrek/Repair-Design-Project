@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	closeBtn.addEventListener('click', switchModal);
 	closeModal.addEventListener('click', switchModal);
-	document.body.onkeyup = function(e){
-    if(e.keyCode == 32){
-				switchModal();
-    }
-}
+	document.addEventListener('keydown', function (e) {
+		if(e.keyCode === 27) {
+			modal.classList.remove('modal--visible');
+		}
+	});
 });
