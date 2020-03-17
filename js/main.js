@@ -85,13 +85,14 @@ $(document).ready(function () {
 		},
 		spaceBetween: 15,
 	});
-
+	var counter = 1;
 	$(".right__promo").click(function() {
 		var index = $(this).index();
 		mySwiper2[0].slideTo(index+1, 600);
 		mySwiper2[1].slideTo(index+1, 600);
+		counter = index + 1;
+		console.log(counter);
 	});
-	var counter = 1;
 	$(".swiper-button-next-2").click( function() {
 		counter += 1;
 		if (counter == 7) {
