@@ -24,9 +24,20 @@
 	.row
 		flex-direction: column
 		align-items: center
+	.col-45
+		width: 95%
+		margin-bottom: 20px
+	.col-55
+		width: 95%
+	.col-30
+		width: 421px
+	.swiper-container-s1
+		width: 100%
 	.types
 		&__card
 			margin-bottom: 5rem
+	.sixsteps
+		display: none
 	.design
 		&--heading
 			color: $light
@@ -39,6 +50,12 @@
 	.card
 		&__text
 			margin-left: 0
+		&__image
+			width: 100%
+	.section-title
+		&__word
+			&::after
+				display: none
 
 @media screen and ( max-width: 570px )
 	.contacts
@@ -48,7 +65,8 @@
 			text-decoration: none
 		&__button
 			display: none
-
+	.col-30
+		width: 95%
 	.title
 		font-size: 1.64rem
 		margin-top: 85px
@@ -59,6 +77,8 @@
 			display: none
 		&__content
 			max-width: 22.86rem
+		&::after
+			display: none
 	
 	.content
 		&__description

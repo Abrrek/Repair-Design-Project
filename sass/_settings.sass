@@ -11,8 +11,28 @@ body
 	padding: 60px 0
 	&-title
 		text-align: center
-		text-transform: uppercase
-		font-family: 'Yeseva One', cursive
+		&--left
+			text-align: left
+		&__heading
+			text-transform: uppercase
+			font-family: 'Yeseva One', cursive
+			line-height: 138.6%
+			&--primary
+				color: $primary
+		&__word
+			display: flex
+			align-items: center
+			&::after
+				content: ''
+				width: 92px
+				height: 2px
+				background-color: $primary
+				margin-left: 2rem
+		&__description
+			display: inline-block
+			font-size: 1.28rem
+			line-height: 2.07rem
+			max-width: 31.57rem
 		&__image
 			display: flex
 			justify-content: center
@@ -23,6 +43,10 @@ body
 				height: 2px
 				background-color: $primary
 				margin: 0 10px
+	
+	&--dark
+		background-color: $dark
+		color: $light
 
 img
 	max-width: 100%

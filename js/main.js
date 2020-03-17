@@ -59,4 +59,122 @@ $(document).ready(function () {
 			}, 500);
 			return false;
 	});
+
+	var mySwiper1 = new Swiper ('.swiper-container-s1', {
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination-1',
+			type: 'bullets',
+		},
+		navigation: {
+			nextEl: '.swiper-button-next-1',
+			prevEl: '.swiper-button-prev-1',
+		},
+		spaceBetween: 15,
+	});
+
+	const mySwiper2 = new Swiper ('.swiper-container-s2', {
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination-2',
+			type: 'bullets',
+		},
+		navigation: {
+			nextEl: '.swiper-button-next-2',
+			prevEl: '.swiper-button-prev-2',
+		},
+		spaceBetween: 15,
+	});
+
+	$(".right__promo").click(function() {
+		var index = $(this).index();
+		mySwiper2[0].slideTo(index+1, 600);
+		mySwiper2[1].slideTo(index+1, 600);
+	});
+	var counter = 1;
+	$(".swiper-button-next-2").click( function() {
+		counter += 1;
+		if (counter == 7) {
+			counter = 1;
+			promoChanger();
+		}
+		else {
+			promoChanger();
+		}
+	});
+	$(".swiper-button-prev-2").click( function() {
+		counter -= 1;
+		if (counter == 0) {
+			counter = 6;
+			promoChanger();
+		}
+		else {
+			promoChanger();
+		}
+	});
+
+	function promoChanger() {
+		if (counter == 1) {
+			$(".right__promo").css("opacity", 0.3);
+			$(".right__promo:eq(0)").css("opacity", 1);
+		}
+		if (counter == 2) {
+			$(".right__promo").css("opacity", 0.3);
+			$(".right__promo:eq(1)").css("opacity", 1);
+		}
+		if (counter == 3) {
+			$(".right__promo").css("opacity", 0.3);
+			$(".right__promo:eq(2)").css("opacity", 1);
+		}
+		if (counter == 4) {
+			$(".right__promo").css("opacity", 0.3);
+			$(".right__promo:eq(3)").css("opacity", 1);
+		}
+		if (counter == 5) {
+			$(".right__promo").css("opacity", 0.3);
+			$(".right__promo:eq(4)").css("opacity", 1);
+		}
+		if (counter == 6) {
+			$(".right__promo").css("opacity", 0.3);
+			$(".right__promo:eq(5)").css("opacity", 1);
+		}
+	}
+
+	$(".right--slide-first").click( function() {
+		$(".right__promo").css("opacity", 0.3)
+		$(this).css("opacity", 1);
+	})
+	$(".right--slide-second").click( function() {
+		$(".right__promo").css("opacity", 0.3)
+		$(this).css("opacity", 1);
+	})
+	$(".right--slide-third").click( function() {
+		$(".right__promo").css("opacity", 0.3)
+		$(this).css("opacity", 1);
+	})
+	$(".right--slide-fourth").click( function() {
+		$(".right__promo").css("opacity", 0.3)
+		$(this).css("opacity", 1);
+	})
+	$(".right--slide-fifth").click( function() {
+		$(".right__promo").css("opacity", 0.3)
+		$(this).css("opacity", 1);
+	})
+	$(".right--slide-sixth").click( function() {
+		$(".right__promo").css("opacity", 0.3)
+		$(this).css("opacity", 1);
+	})
+
+	var  next1 = $('.swiper-button-next-1');
+	var  prev1 = $('.swiper-button-prev-1');
+	var  bullets1 = $('.swiper-pagination-1');
+	var  next2 = $('.swiper-button-next-2');
+	var  prev2 = $('.swiper-button-prev-2');
+	var  bullets2 = $('.swiper-pagination-2');
+
+	next1.css('left', prev1.width() + bullets1.width() + 20)
+	bullets1.css('left', prev1.width() + 10)
+
+	next2.css('left', prev2.width() + bullets2.width() + 20)
+	bullets2.css('left', prev2.width() + 10)
 });

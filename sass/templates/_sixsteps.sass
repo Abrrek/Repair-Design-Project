@@ -1,0 +1,64 @@
+.left
+	margin-top: -100px
+	&__howwework
+		font-size: 1.07rem
+		text-transform: uppercase
+	&__main-title
+		font-size: 1.93rem
+		margin-bottom: 92px
+	&__word
+		&::after
+			margin-left: 90px
+	&__numb
+		font-family: 'Yeseva One', cursive
+		text-transform: uppercase
+		width: 100%
+		margin-bottom: 22px
+	&__heading
+		font-size: 1.07rem
+		line-height: 1.15
+	&__description
+		line-height: 1.78rem
+		margin-bottom: 62px
+
+.right
+	&__buttons
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__promo
+		margin-left: 11%
+		&:nth-child(4)
+			margin-left: 0
+
+.promo
+	opacity: 0.3
+	transition: 0.2s
+	&:first-child
+		opacity: 1
+		margin-left: 0
+	&__numb
+		display: flex
+		align-items: flex-end
+		font-size: 1.07rem
+		line-height: 1.3rem
+		font-family: 'Yeseva One', cursive
+		cursor: pointer
+		&::after
+			position: absolute
+			content: ''
+			width: 16px
+			height: 2px
+			background-color: $primary
+	&__description
+		// width: 70%
+		cursor: pointer
+
+.swiper
+	&-wrapper
+		display: flex
+		align-items: centers
+		width: 100%
+	&-slide-s2
+		height: 375px
+	
