@@ -165,7 +165,7 @@ $(document).ready(function () {
 		$(".right__promo").css("opacity", 0.3)
 		$(this).css("opacity", 1);
 	})
-
+	
 	var  next1 = $('.swiper-button-next-1');
 	var  prev1 = $('.swiper-button-prev-1');
 	var  bullets1 = $('.swiper-pagination-1');
