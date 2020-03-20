@@ -88,8 +88,47 @@
 			display: block
 			min-width: 22.86rem
 			margin-bottom: 1.85rem
+	.control
+		padding: 0
+		background-color: $dark
+		color: $light
+		&__form
+		&__video
+			min-height: 24.78rem
+		&__text
+			font-size: 1.2rem
+		&__input-group
+			flex-basis: 100%
+			margin-bottom: 63px
+			&:nth-child(2)
+				margin-bottom: 0
+		&__input
+			padding: 1rem	
+			padding-left: 0
+			&::placeholder
+				color: $light	
+		&__label
+			opacity: 0.5
+		&__policy
+			margin-bottom: 62px
+			&-label
+				justify-content: flex-start
+		&__button
+			order: 1
+			width: 100%
+			margin-bottom: -20px
+		&__text
+			margin-bottom: 28px
+			&::before
+				margin-bottom: 21px
+
+@media screen and ( max-width: 500px )
+	.control
+		&__video
+			min-height: 16.78rem
 
 @media screen and ( max-height: 520px )
 	.hero
 		&__scroll-down
 			display: none
+	

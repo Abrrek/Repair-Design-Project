@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
 	<title>Repair Design Project</title>
 </head>
@@ -12,14 +13,14 @@
 	<header class="header">
 		<div class="container">
 			<div class="menu">
-				<div class="logo menu__logo">repair design project</div>
+				<div class="logo menu__logo woww fadeInRight-1">repair design project</div>
 				<nav class="nav menu__nav">
-					<a class="nav__item">Главная</a>
-					<a class="nav__item">Проекты</a>
-					<a class="nav__item">Замер</a>
-					<a class="nav__item">Команда</a>
-					<a class="nav__item">Отзывы</a>
-					<a class="nav__item">Контакты</a>
+					<button class="nav__item">Главная</button>
+					<button class="nav__item">Замер</button>
+					<button class="nav__item">Команда</button>
+					<button class="nav__item">Проекты</button>
+					<button class="nav__item">Отзывы</button>
+					<button class="nav__item">Контакты</button>
 				</nav>
 				<div class="contacts header__contacts">
 					<a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
@@ -34,10 +35,10 @@
 		</div>
 		<div class="container">
 			<div class="content hero__content">
-				<h1 class="title content__title">турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-				<p class="content__description">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-				<button class="button content__button button--primary" data-toggle="modal">рассчитать стоимость</button>
-				<button class="button content__button button--outline">отправить заявку</button>
+				<h1 class="title content__title woww fadeInRight-1">турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+				<p class="content__description woww fadeInRight-1">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+				<button class="button content__button button--primary woww fadeInRight-1" data-toggle="modal">рассчитать стоимость</button>
+				<button class="button content__button button--outline woww fadeInRight-1">отправить заявку</button>
 			</div>
 		</div>
 		<!-- /.container -->
@@ -48,7 +49,7 @@
 			<div class="row">
 				<div class="col-45">
 					<div class="section-title section-title--left">
-						<h2 class="section-title__heading section-title__heading--primary">Завершённые <span class="section-title__word">проекты</span></h2>
+						<h2 class="section-title__heading section-title__heading--primary projects__section-title__heading--wow">Завершённые <span class="section-title__word">проекты</span></h2>
 						<p class="section-title__description">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
 					</div>
 					<!-- Slider main container -->
@@ -157,24 +158,45 @@
 	</section>
 	<section class="section control">
 		<div class="container">
-			<div class="section-title">
-				<h2 class="section-title__heading"></h2>
+			<div class="section-title control__section-title section-title--light control__section-title--woww">
+				<h2 class="section-title__heading">Онлайн контроль</h2>
 				<div class="section-title__image">
 					<img src="img/camera.svg" alt="">
 				</div>
 			</div>
+			<div class="control__video video">
+				<img class="video__play" src="img/video-play-btn.svg" alt="video-play">
+			</div>
+			<!-- /.control__video video -->
+			<p class="control__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.</p>
+			<form action="#" class="form control__form">
+				<div class="control__input-group">
+					<label for="user-name" class="label form__label control__label">Имя</label>
+				<input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут">
+				</div>
+				<div class="control__input-group">
+					<label for="user-phone" class="label form__label control__label">Телефон</label>
+				<input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона">
+				</div>
+				<button class="button button--primary control__button">Отправить</button>
+				<div class="policy control__policy">
+					<input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="policy-checkbox" checked>
+					<label for="policy-checkbox" class="policy__label control__policy-label" >я соглашаюсь с обработкой данных</label>
+				</div>
+				<!-- /.policy -->
+			</form>
 		</div>
 	</section>
 	<!-- /.section control -->
 	<section class="section types">
 		<div class="container">
 			<div class="section-title types__section-title">
-				<h2 class="types__heading">Виды ремонта</h2>
+				<h2 class="types__heading  types__heading--woww">Виды ремонта</h2>
 				<div class="section-title__image types--image">
 					<img src="img/repair.svg" alt="">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row types__row types__row--woww">
 				<div class="col-30">
 					<div class="card types__card">
 						<img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
@@ -280,13 +302,13 @@
 	<section class="section design">
 		<div class="container">
 			<div class="section-title design__section-title">
-				<h2 class="section-title__heading design--heading">Дизайн проект</h2>
+				<h2 class="section-title__heading design--heading design_heading--woww">Дизайн проект</h2>
 				<div class="section-title__image design--image">
 					<img src="img/design.svg">
 				</div>
 			</div>
 			<p class="design__description">Дизайн-проект не только помогает сделать ремонт вашей квартиры более современным, но и значительно удешевляет материалы и сокращает время ремонтных работ</p>
-			<div class="row design--row">
+			<div class="row design--row  design--row--woww" data-wow-delay="0.3s">
 				<div class="col">
 					<div class="card design__card">
 						<img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
@@ -397,7 +419,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="left col-31">
-					<p class="left__howwework">как мы работаем</p>
+					<p class="left__howwework left__howwework--woww">как мы работаем</p>
 					<div class="section-title section-title--left">
 						<p class=" left__main-title section-title__heading section-title__heading--primary">6 шагов <span class="left__word section-title__word">до цели</span></p>
 					</div>
@@ -513,11 +535,11 @@
 			<h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
 			<form action="#" class="form modal__form">
 				<label for="user-name" class="label form__label label--light">Имя</label>
-				<input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут">
+				<input type="text" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут">
 				<label for="user-phone" class="label form__label label--light">Телефон</label>
-				<input type="tel" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона">
+				<input type="tel" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона">
 				<label for="user-email" class="label form__label label--light">Email</label>
-				<input type="email" class="input form__input modal__input" id="user-email" placeholder="Ваш Email">
+				<input type="email" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш Email">
 				<div class="policy modal__policy">
 					<input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="policy-checkbox" checked>
 					<label for="policy-checkbox" class="policy__label" >я соглашаюсь с обработкой данных</label>
@@ -534,6 +556,7 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

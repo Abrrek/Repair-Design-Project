@@ -1,0 +1,57 @@
+@keyframes pulse-1
+	0%
+		transform: scale3d(1, 1, 1)
+	50%
+		transform: scale3d(1.1, 1.1, 1.1)
+	100%
+		transform: scale3d(1, 1, 1)
+
+@keyframes 	jello-1
+	0%
+		transform: rotateZ(0deg)
+	3.3%
+		transform: rotateZ(3deg)
+	16.6%
+		transform: rotateZ(7deg)
+	30%
+		transform: rotateZ(3deg)
+	33.3%
+		transform: rotateZ(0deg)
+	36.6%
+		transform: rotateZ(-3deg)
+	50%
+		transform: rotateZ(-7deg)
+	63.3%
+		transform: rotateZ(-3deg)
+	66.6%
+		transform: rotateZ(0deg)
+	70%
+		transform: rotateZ(3deg)
+	83.3%
+		transform: rotateZ(7deg)
+	96.6%
+		transform: rotateZ(3deg)
+	100%
+		transform: rotateZ(0deg)
+		
+@keyframes fadeInRight-1
+	0%
+		opacity: 0
+		transform: translate3d(100%, 0, 0)
+	100%
+		opacity: 1
+		transform: translate3d(0, 0, 0)
+	
+.fadeInRight-1
+	animation: fadeInRight-1 0.7s ease 
+
+@keyframes fadeInUp-1
+	0%
+		opacity: 0
+		transform: translate3d(0, 100%, 0)
+	100%
+		opacity: 1
+		transform: translate3d(0, 0, 0)
+
+.fadeInUp-1
+	animation: fadeInUp-1 2s ease
