@@ -246,4 +246,36 @@ $(document).ready(function () {
 	});
 
 	new WOW().init();
-});
+
+	$('.modal__form').validate({
+		errorClass:"invalid",
+		rules: {
+			// simple rule, converted to {required:true}
+			userName: {
+				required: true,
+				minlength: 2,
+				maxlength: 15,
+			},
+			userPhone: "required",
+			// compound rule
+			userEmail: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			userName: {
+				required: "Имя обязательно",
+				minlength: "Имя не короче 2-х букв",
+				maxlength: "Имя не длиннее 15-ти букв"
+			},
+			userPhone: "Телефон обязателен",
+			userEmail: {
+				required: "Заполните поле",
+				email: "Введите корректный email"
+			}
+		}
+	});
+
+	$('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+	});
