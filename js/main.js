@@ -178,17 +178,7 @@ $(document).ready(function () {
 
 	next2.css('left', prev2.width() + bullets2.width() + 20)
 	bullets2.css('left', prev2.width() + 10)
-	// var container = $('.woww'),
-	// 		win = $(window),
-	// 		windowHeight = win.height();
-	// win.scroll(function () {
-	// 	var scrollPos = $(this).scrollTop(),
-	// 			containerPos = container.offset().top;
-	// 	if (scrollPos >= containerPos - windowHeight/1.5) {
-	// 		console.log("111");
-	// 		$('.row').addClass('fadeInUp-1');
-	// }    
-	// });
+
 	$('.projects__section-title__heading--wow').css('opacity', 0);
 	$('.control__section-title--woww').css('opacity', 0);
 	$('.types__heading--woww').css('opacity', 0);
@@ -248,6 +238,7 @@ $(document).ready(function () {
 	new WOW().init();
 
 	$('.modal__form').validate({
+		errorElement: "div",
 		errorClass:"invalid",
 		rules: {
 			// simple rule, converted to {required:true}
@@ -261,6 +252,9 @@ $(document).ready(function () {
 			userEmail: {
 				required: true,
 				email: true
+			},
+			policyCheckbox: {
+				required: true
 			}
 		},
 		messages: {
@@ -273,7 +267,62 @@ $(document).ready(function () {
 			userEmail: {
 				required: "Заполните поле",
 				email: "Введите корректный email"
+			},
+			policyCheckbox: "Необходимо принять пользовательские соглашения"
+		}
+	});
+
+	$('.control__form').validate({
+		errorClass:"invalid",
+		rules: {
+			// simple rule, converted to {required:true}
+			userName: {
+				required: true,
+				minlength: 2,
+				maxlength: 15,
+			},
+			userPhone: "required",
+			// compound rule
+			policyCheckbox: {
+				required: true
 			}
+		},
+		messages: {
+			userName: {
+				required: "Имя обязательно",
+				minlength: "Имя не короче 2-х букв",
+				maxlength: "Имя не длиннее 15-ти букв"
+			},
+			userPhone: "Телефон обязателен",
+			policyCheckbox: "Необходимо принять пользовательские соглашения"
+		}
+	});
+
+	$('.footer__form').validate({
+		errorClass:"invalid",
+		rules: {
+			// simple rule, converted to {required:true}
+			userName: {
+				required: true,
+				minlength: 2,
+				maxlength: 15,
+			},
+			userPhone: "required",
+			// compound rule
+			userQuestion: "required",
+			policyCheckbox: {
+				required: true
+			}
+		},
+		messages: {
+			userName: {
+				required: "Имя обязательно",
+				minlength: "Имя не короче 2-х букв",
+				maxlength: "Имя не длиннее 15-ти букв"
+			},
+			userPhone: "Телефон обязателен",
+			userQuestion: "Укажите свой вопрос",
+			policyCheckbox: "Необходимо принять пользовательские соглашения"
 		}
 	});
 
