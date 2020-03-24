@@ -46,15 +46,17 @@
 			display: none
 	.cards
 		flex-direction: column
-		margin-bottom: 0
+		margin-bottom: 15rem
 		width: 100%
 		&__card
-			width: 90%
+			width: 65%
 			flex-basis: 100%
 			margin-bottom: 7rem
 			margin-left: 2.5rem
 			&--last
 				margin-bottom: 0
+	.ourclients
+		display: none
 
 	.design
 		&--heading
@@ -143,9 +145,20 @@
 
 	.ourteam
 		margin-top: -10rem
-
+	.cards
+		margin-bottom: 1rem
+		&__card
+			width: 90%
 	.footer
+		display: flex
+		flex-direction: column
 		background: url() $dark
+		&__section-title
+			order: 2
+		&__social-links
+			order: 3
+			margin-top: 2rem
+			margin-bottom: 3rem
 		&__title
 			font-size: 20px
 		&__wrap

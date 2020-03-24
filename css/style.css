@@ -440,6 +440,7 @@ body {
 .section {
   padding: 60px 0; }
   .section-title {
+    font-weight: normal;
     text-align: center; }
     .section-title--left {
       text-align: left; }
@@ -823,7 +824,7 @@ img {
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center;
-  background-size: 100%;
+  background-size: 100% 100%;
   padding-top: 3rem; }
   .footer__wrap {
     background-color: #181818;
@@ -832,6 +833,9 @@ img {
     padding: 2.5rem;
     margin-top: -17rem;
     margin-bottom: 3.714rem; }
+    .footer__wrap-2 {
+      display: flex;
+      flex-direction: column; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -870,6 +874,29 @@ img {
     padding: 4.285rem 0; }
   .footer__label {
     font-size: 15px; }
+  .footer__section-title {
+    max-width: 42.14rem;
+    margin: auto;
+    font-size: 1.12rem; }
+  .footer__social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer__message, .footer__instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3B873;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%; }
+  .footer__message {
+    margin-right: 15px; }
+  .footer__map {
+    width: 100%;
+    max-width: 925px;
+    margin: 20px auto;
+    height: 465px; }
 
 .modal {
   visibility: hidden;
@@ -1116,8 +1143,7 @@ img {
   height: 375px; }
 
 .ourteam {
-  margin-top: -32rem;
-  padding-bottom: 22rem; }
+  margin-top: -32rem; }
   .ourteam--heading {
     color: #fff; }
   .ourteam__description {
@@ -1197,6 +1223,71 @@ img {
     font-family: 'Yeseva One', cursive;
     background-color: #E3B873; }
 
+.ourclients {
+  padding-bottom: 25rem; }
+  .ourclients__description {
+    max-width: 25.71rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1.42rem;
+    margin-top: 1.71rem;
+    margin-bottom: 2.78rem; }
+  .ourclients--row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .ourclients__col {
+    flex-basis: 32%;
+    height: 100%; }
+  .ourclients__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04); }
+  .ourclients__profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.57rem;
+    padding: 0.94rem; }
+  .ourclients__image {
+    border-radius: 50%;
+    margin-right: 1.64rem; }
+  .ourclients__name {
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.28rem;
+    max-width: 14rem; }
+  .ourclients__card-description {
+    margin: 0 1.42rem;
+    font-size: 1.08rem;
+    line-height: 180%;
+    color: #959595;
+    margin-bottom: 2.57rem; }
+  .ourclients__size-date {
+    display: flex;
+    max-width: 21rem;
+    margin-bottom: -6%; }
+  .ourclients__size, .ourclients__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    color: #fff;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.21rem;
+    text-transform: uppercase;
+    background-color: #E3B873; }
+    .ourclients__size img, .ourclients__date img {
+      margin-right: 10px; }
+  .ourclients__size {
+    margin-right: 1px;
+    width: 45%; }
+  .ourclients__date {
+    width: 55%; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -1237,15 +1328,17 @@ img {
       display: none; }
   .cards {
     flex-direction: column;
-    margin-bottom: 0;
+    margin-bottom: 15rem;
     width: 100%; }
     .cards__card {
-      width: 90%;
+      width: 65%;
       flex-basis: 100%;
       margin-bottom: 7rem;
       margin-left: 2.5rem; }
       .cards__card--last {
         margin-bottom: 0; }
+  .ourclients {
+    display: none; }
   .design--heading {
     color: #fff; }
   .design__description {
@@ -1323,8 +1416,20 @@ img {
         margin-bottom: 21px; }
   .ourteam {
     margin-top: -10rem; }
+  .cards {
+    margin-bottom: 1rem; }
+    .cards__card {
+      width: 90%; }
   .footer {
+    display: flex;
+    flex-direction: column;
     background: url() #131313; }
+    .footer__section-title {
+      order: 2; }
+    .footer__social-links {
+      order: 3;
+      margin-top: 2rem;
+      margin-bottom: 3rem; }
     .footer__title {
       font-size: 20px; }
     .footer__wrap {
