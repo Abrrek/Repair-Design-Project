@@ -768,7 +768,9 @@ img {
   .types--image {
     margin-bottom: 27px; }
   .types__heading {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    text-transform: uppercase;
+      text-transform-font-family: "Yeseva One", cursive; }
 
 .card__text {
   position: relative;
