@@ -342,20 +342,21 @@ $(document).ready(function () {
         ),
 
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Наш офис',
-            balloonContent: 'Вход со двора'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: '../img/myicon.svg',
-            // Размеры метки.
-            iconImageSize: [30, 30],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-						iconImageOffset: [-5, -38],
-        });
+					hintContent: 'Вот мы',
+					balloonContent: 'Да-да, это мы :)'
+			}, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#image',
+					// Своё изображение иконки метки.
+					iconImageHref: '../img/myicon.svg',
+					// Размеры метки.
+					iconImageSize: [30, 42],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-5, -38]
+			});
+
 		myMap.behaviors.enable('scrollZoom');
     myMap.geoObjects
         .add(myPlacemark);
