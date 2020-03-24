@@ -331,10 +331,10 @@ $(document).ready(function () {
 	ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.754986, 37.573185],
-            zoom: 9
+            zoom: 14
         }, {
             searchControlProvider: 'yandex#search'
-        }),
+				}),
 
         // Создаём макет содержимого.
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
@@ -354,9 +354,9 @@ $(document).ready(function () {
             iconImageSize: [30, 30],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
+						iconImageOffset: [-5, -38],
         });
-
+		myMap.behaviors.enable('scrollZoom');
     myMap.geoObjects
         .add(myPlacemark);
 	});
