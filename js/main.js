@@ -354,7 +354,7 @@ $(document).ready(function () {
 					iconImageSize: [42, 42],
 					// Смещение левого верхнего угла иконки относительно
 					// её "ножки" (точки привязки).
-					// iconImageOffset: [-5, -38]
+					iconImageOffset: [-5, -38]
 			});
 
 		myMap.behaviors.disable('scrollZoom');
