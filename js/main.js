@@ -351,7 +351,7 @@ $(document).ready(function () {
 					// Своё изображение иконки метки.
 					iconImageHref: '../img/myicon.svg',
 					// Размеры метки.
-					iconImageSize: [30, 42],
+					iconImageSize: [42, 42],
 					// Смещение левого верхнего угла иконки относительно
 					// её "ножки" (точки привязки).
 					iconImageOffset: [-5, -38]
