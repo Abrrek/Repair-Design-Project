@@ -349,7 +349,7 @@ $(document).ready(function () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: '../img/myIcon.svg',
+            iconImageHref: '../img/myicon.svg',
             // Размеры метки.
             iconImageSize: [30, 30],
             // Смещение левого верхнего угла иконки относительно
